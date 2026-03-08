@@ -6,7 +6,7 @@ const services = [
     {
         icon: <HiCloud className="text-3xl" />,
         title: 'Cloud Solutions',
-        description: 'Designing and implementing scalable cloud architectures on Microsoft Azure with a focus on security and cost optimization.',
+        description: 'Designing and implementing scalable cloud architectures on Microsoft Azure with a focus on high availability and cost optimization.',
         color: 'from-cyan-500 to-blue-500',
     },
     {
@@ -23,8 +23,8 @@ const services = [
     },
     {
         icon: <HiShieldCheck className="text-3xl" />,
-        title: 'Cloud Security',
-        description: 'Implementing security best practices, identity management, and compliance frameworks in cloud environments.',
+        title: 'DevOps & CI/CD',
+        description: 'Automating deployment pipelines, managing containerized applications, and scaling infrastructure using modern DevOps tools.',
         color: 'from-orange-500 to-amber-500',
     },
 ];

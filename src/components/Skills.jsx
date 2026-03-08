@@ -18,7 +18,7 @@ const skillCategories = [
         skills: [
             { name: 'Microsoft Azure', icon: <HiCloudUpload className="text-lg" /> },
             { name: 'Cloud Fundamentals', icon: <HiCloud className="text-lg" /> },
-            { name: 'Cloud Security', icon: <HiShieldCheck className="text-lg" /> },
+            { name: 'CI/CD Pipelines', icon: <HiShieldCheck className="text-lg" /> },
             { name: 'Infrastructure Design', icon: <HiCog className="text-lg" /> },
         ],
     },
@@ -106,8 +106,8 @@ export default function Skills() {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.3, delay: catIdx * 0.05 + skillIdx * 0.05 }}
                                         className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 cursor-default ${isDark
-                                                ? 'bg-white/[0.03] text-dark-text border border-white/[0.06] hover:border-primary/30 hover:bg-white/[0.06]'
-                                                : 'bg-white text-light-text border border-black/[0.06] hover:border-primary/30 hover:shadow-sm'
+                                            ? 'bg-white/[0.03] text-dark-text border border-white/[0.06] hover:border-primary/30 hover:bg-white/[0.06]'
+                                            : 'bg-white text-light-text border border-black/[0.06] hover:border-primary/30 hover:shadow-sm'
                                             }`}
                                     >
                                         <span className="text-primary">{skill.icon}</span>

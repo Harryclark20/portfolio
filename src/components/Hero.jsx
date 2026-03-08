@@ -151,7 +151,7 @@ export default function Hero() {
                     className={`text-base sm:text-lg max-w-2xl mx-auto mb-12 leading-relaxed ${isDark ? 'text-dark-muted' : 'text-light-muted'
                         }`}
                 >
-                    Microsoft Azure certified professional with a passion for DevOps, cloud security,
+                    Microsoft Azure certified professional with a passion for DevOps,
                     infrastructure design, and building scalable CI/CD solutions that make a difference.
                 </motion.p>
 

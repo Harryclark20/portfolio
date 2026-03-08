@@ -49,7 +49,7 @@ export default function Certifications() {
                                 </p>
                                 <p className={`text-sm leading-relaxed ${isDark ? 'text-dark-muted' : 'text-light-muted'}`}>
                                     Demonstrates foundational knowledge of cloud concepts, core Azure services,
-                                    security, privacy, compliance, pricing, and support.
+                                    privacy, compliance, pricing, and support.
                                 </p>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ export default function Certifications() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     className={`text-center text-sm mt-8 ${isDark ? 'text-dark-muted' : 'text-light-muted'}`}
                 >
-                    🚀 Currently pursuing more cloud and security certifications
+                    🚀 Currently pursuing more cloud and DevOps certifications
                 </motion.p>
             </div>
         </section>

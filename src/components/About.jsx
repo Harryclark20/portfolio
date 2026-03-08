@@ -21,7 +21,7 @@ export default function About() {
         {
             icon: <HiLightningBolt className="text-2xl" />,
             title: 'Career Goal',
-            text: 'To become a DevOps Engineer focusing on CI/CD pipelines, cloud security, and scalable infrastructure.',
+            text: 'To become a DevOps Engineer focusing on CI/CD pipelines, automation, and scalable infrastructure.',
             color: 'from-amber-500 to-orange-400',
         },
         {
@@ -54,7 +54,7 @@ export default function About() {
                         currently working as an IT Support Specialist at Pan-Atlantic University.
                         With hands-on experience in troubleshooting hardware, software issues, and
                         cloud technologies, I&apos;m building my path toward becoming a DevOps
-                        Engineer with a strong focus on automation and cloud security.
+                        Engineer with a strong focus on automation and continuous delivery.
                     </p>
                 </motion.div>
 
