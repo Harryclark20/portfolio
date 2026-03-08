@@ -1,16 +1,32 @@
-# React + Vite
+# Oliver Obiwulu - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./public/vite.svg)
 
-Currently, two official plugins are available:
+Welcome to the source code for my personal portfolio! I am an aspiring **DevOps Engineer** and IT Support Specialist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Website
 
-## React Compiler
+You can view the live portfolio here:
+👉 **[https://void-aphelion.vercel.app](https://void-aphelion.vercel.app)** *(Primary - Vercel)*
+👉 **[https://harryclark20.github.io/portfolio](https://harryclark20.github.io/portfolio)** *(Secondary - GitHub Pages)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Modern UI:** Built with React, Tailwind CSS, and Framer Motion for smooth animations.
+- **Dark/Light Mode:** Full theme support with a sleek glassmorphism aesthetic.
+- **Projects:** Showcases my work including Revils Tech, Sweetone, and Asset Management System.
+- **Responsive:** Fully optimized for all screen sizes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+
+- React (Vite)
+- Tailwind CSS v4
+- Framer Motion
+- React Icons
+
+## 💻 Local Development
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open `http://localhost:5173`
