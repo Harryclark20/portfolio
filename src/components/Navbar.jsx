@@ -17,20 +17,40 @@ const navLinks = [
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [hidden, setHidden] = useState(false);
     const { isDark, toggleTheme } = useTheme();
 
     useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 20);
-        window.addEventListener('scroll', handleScroll);
+        let lastScrollY = window.scrollY;
+
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Add background after scrolling 20px
+            setScrolled(currentScrollY > 20);
+
+            // Hide navbar on scroll down, show on scroll up.
+            // Only trigger hiding after scrolling past 100px.
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                setHidden(true);
+                setIsOpen(false); // Close mobile menu if open
+            } else {
+                setHidden(false);
+            }
+
+            lastScrollY = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
         <motion.nav
             initial={{ y: -100 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-transparent'
+            animate={{ y: hidden ? -100 : 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,8 +65,8 @@ export default function Navbar() {
                                 key={link.name}
                                 href={link.href}
                                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:text-primary ${isDark
-                                        ? 'text-dark-muted hover:bg-white/5'
-                                        : 'text-light-muted hover:bg-black/5'
+                                    ? 'text-dark-muted hover:bg-white/5'
+                                    : 'text-light-muted hover:bg-black/5'
                                     }`}
                             >
                                 {link.name}
@@ -56,8 +76,8 @@ export default function Navbar() {
                         <button
                             onClick={toggleTheme}
                             className={`p-2.5 rounded-xl transition-all duration-300 hover:scale-110 ${isDark
-                                    ? 'hover:bg-white/10 text-yellow-400'
-                                    : 'hover:bg-black/5 text-indigo-500'
+                                ? 'hover:bg-white/10 text-yellow-400'
+                                : 'hover:bg-black/5 text-indigo-500'
                                 }`}
                             aria-label="Toggle theme"
                         >
