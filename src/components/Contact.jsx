@@ -32,7 +32,7 @@ export default function Contact() {
         {
             icon: <FaLinkedin className="text-lg" />,
             label: 'LinkedIn',
-            value: 'Oliver Obiwulu',
+            value: 'Revilo',
             href: 'https://linkedin.com/in/oliver-obiwulu',
             color: 'from-blue-600 to-blue-700',
         },
@@ -135,10 +135,10 @@ export default function Contact() {
                                         onChange={handleChange}
                                         required
                                         className={`w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 ${isDark
-                                                ? 'bg-white/[0.03] border border-white/[0.08] text-dark-text focus:border-primary/50 focus:bg-white/[0.05]'
-                                                : 'bg-white border border-black/[0.08] text-light-text focus:border-primary/50'
+                                            ? 'bg-white/[0.03] border border-white/[0.08] text-dark-text focus:border-primary/50 focus:bg-white/[0.05]'
+                                            : 'bg-white border border-black/[0.08] text-light-text focus:border-primary/50'
                                             }`}
-                                        placeholder="Oliver Obiwulu"
+                                        placeholder="Revilo"
                                     />
                                 </div>
                                 <div>
@@ -154,8 +154,8 @@ export default function Contact() {
                                         onChange={handleChange}
                                         required
                                         className={`w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 ${isDark
-                                                ? 'bg-white/[0.03] border border-white/[0.08] text-dark-text focus:border-primary/50 focus:bg-white/[0.05]'
-                                                : 'bg-white border border-black/[0.08] text-light-text focus:border-primary/50'
+                                            ? 'bg-white/[0.03] border border-white/[0.08] text-dark-text focus:border-primary/50 focus:bg-white/[0.05]'
+                                            : 'bg-white border border-black/[0.08] text-light-text focus:border-primary/50'
                                             }`}
                                         placeholder="you@example.com"
                                     />
@@ -174,8 +174,8 @@ export default function Contact() {
                                     onChange={handleChange}
                                     required
                                     className={`w-full px-4 py-3 rounded-xl text-sm outline-none resize-none transition-all duration-200 ${isDark
-                                            ? 'bg-white/[0.03] border border-white/[0.08] text-dark-text focus:border-primary/50 focus:bg-white/[0.05]'
-                                            : 'bg-white border border-black/[0.08] text-light-text focus:border-primary/50'
+                                        ? 'bg-white/[0.03] border border-white/[0.08] text-dark-text focus:border-primary/50 focus:bg-white/[0.05]'
+                                        : 'bg-white border border-black/[0.08] text-light-text focus:border-primary/50'
                                         }`}
                                     placeholder="Tell me about your project or opportunity..."
                                 />
@@ -184,8 +184,8 @@ export default function Contact() {
                                 type="submit"
                                 disabled={submitted}
                                 className={`w-full py-4 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-all duration-300 ${submitted
-                                        ? 'bg-emerald-500 text-white'
-                                        : 'bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.01]'
+                                    ? 'bg-emerald-500 text-white'
+                                    : 'bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.01]'
                                     }`}
                             >
                                 {submitted ? (

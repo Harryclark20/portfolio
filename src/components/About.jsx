@@ -50,7 +50,7 @@ export default function About() {
                     </h2>
                     <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-8" />
                     <p className={`max-w-2xl mx-auto text-base sm:text-lg leading-relaxed ${isDark ? 'text-dark-muted' : 'text-light-muted'}`}>
-                        I&apos;m <strong>Oliver Obiwulu</strong>, a passionate Computer Science graduate
+                        I&apos;m <strong>Revilo</strong>, a passionate Computer Science graduate
                         currently working as an IT Support Specialist at Pan-Atlantic University.
                         With hands-on experience in troubleshooting hardware, software issues, and
                         cloud technologies, I&apos;m building my path toward becoming a DevOps

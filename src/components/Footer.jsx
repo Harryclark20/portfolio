@@ -78,7 +78,7 @@ export default function Footer() {
                 <div className={`text-center mt-10 pt-6 border-t text-sm ${isDark ? 'border-dark-border/30 text-dark-muted' : 'border-light-border text-light-muted'
                     }`}>
                     <p className="flex items-center justify-center gap-1">
-                        © {new Date().getFullYear()} Oliver Obiwulu. Crafted with{' '}
+                        © {new Date().getFullYear()} Revilo. Crafted with{' '}
                         <HiHeart className="text-red-500 animate-pulse" /> using React & Tailwind CSS
                     </p>
                 </div>
