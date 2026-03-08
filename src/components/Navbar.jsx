@@ -21,24 +21,19 @@ export default function Navbar() {
     const { isDark, toggleTheme } = useTheme();
 
     useEffect(() => {
-        let lastScrollY = window.scrollY;
-
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
             // Add background after scrolling 20px
             setScrolled(currentScrollY > 20);
 
-            // Hide navbar on scroll down, show on scroll up.
-            // Only trigger hiding after scrolling past 100px.
-            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Hide navbar completely if not at the top (past 100px)
+            if (currentScrollY > 100) {
                 setHidden(true);
                 setIsOpen(false); // Close mobile menu if open
             } else {
                 setHidden(false);
             }
-
-            lastScrollY = currentScrollY;
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
